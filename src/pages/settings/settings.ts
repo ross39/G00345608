@@ -17,7 +17,7 @@ import { Push, PushObject, PushOptions } from '@ionic-native/push';
 })
 export class SettingsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private push: Push) {
+  /*constructor(public navCtrl: NavController, public navParams: NavParams, private push: Push) {
   }
 
   checkForPermissions(){
@@ -36,5 +36,5 @@ export class SettingsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SettingsPage');
   }
-
+*/
 }
