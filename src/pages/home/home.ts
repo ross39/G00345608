@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController} from 'ionic-angular';
 import {ChatPage} from '../chat/chat';
+import { SettingsPage } from '../settings/settings';
 
 
 @Component({
@@ -33,5 +34,9 @@ loginUser(){
 	}else{
 		this.showAlert('Error','Invalid username');  
 	}
+}
+
+settingsPage(){
+   this.navCtrl.push(SettingsPage);
 }
 }

@@ -8,9 +8,11 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AngularFireModule } from 'angularfire2';
 import { ChatPage } from '../pages/chat/chat';
+import { SettingsPage } from '../pages/settings/settings';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFirestore } from 'angularfire2/firestore';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { Push, PushObject, PushOptions } from '@ionic-native/push';
 
 
 
@@ -30,7 +32,8 @@ var config = {
   declarations: [
     MyApp,
     HomePage,
-    ChatPage
+    ChatPage,
+    SettingsPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ var config = {
   entryComponents: [
     MyApp,
     HomePage,
-    ChatPage
+    ChatPage,
+    SettingsPage
   ],
   providers: [
     StatusBar,
