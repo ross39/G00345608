@@ -39,11 +39,11 @@ export class ChatPage {
       }).then( () => {
         // message is sent
       //}).catch( () => {
-        // some error. maybe firebase is unreachable
+        //firebase is possibly unreachable
       });
       this.message = '';
     }
-
+//user has left
     ionViewWillLeave(){
     console.log('user leave');
     this._chatSub.unsubscribe();
@@ -52,7 +52,7 @@ export class ChatPage {
       message: `${this.username} has left the room`
     });
   }
-  
+ //user has joined
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChatPage'); 
     this.db.list('/chat').push({
